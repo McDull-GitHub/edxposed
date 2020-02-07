@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorActionBar">#ff383838</color>
+    <color name="colorBackground">#ff383838</color>
+    <color name="colorPrimaryDark">#ff2e2e2e</color>
+    <color name="colorStickyHeader">#ea424242</color>
+    <color name="navigationBarColor">#b3000000</color>
+    <color name="preference_simple_menu_background">#ff303030</color>
+</resources>

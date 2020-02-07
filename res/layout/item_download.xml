@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:background="?selectableItemBackground"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:padding="16.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textAppearance="?android:textAppearanceListItem"
+            android:textSize="16.0sp"
+            android:id="@id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textAppearance="?android:textAppearanceSmall"
+            android:id="@id/description"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8.0dip"
+            android:layout_below="@id/title"
+            android:layout_alignStart="@id/title" />
+        <TextView
+            android:textAppearance="?android:textAppearanceSmall"
+            android:id="@id/downloadStatus"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/description"
+            android:layout_alignStart="@id/description" />
+        <TextView
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@android:color/tertiary_text_dark"
+            android:id="@id/timestamps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/downloadStatus"
+            android:layout_alignStart="@id/description" />
+    </RelativeLayout>
+</FrameLayout>

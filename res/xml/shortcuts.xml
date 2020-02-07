@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:icon="@drawable/shortcut_ic_modules"
+        android:enabled="true">
+        <intent
+            android:targetPackage="org.meowcat.edxposed.manager"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="org.meowcat.edxposed.manager.ModulesActivity" />
+    </shortcut>
+    <shortcut
+        android:icon="@drawable/shortcut_ic_downloads"
+        android:enabled="true">
+        <intent
+            android:targetPackage="org.meowcat.edxposed.manager"
+            android:action="android.intent.action.MAIN"
+            android:targetClass="org.meowcat.edxposed.manager.DownloadActivity" />
+    </shortcut>
+</shortcuts>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory
+        android:title="@string/settings_group_app"
+        android:key="group_app"
+        app:iconSpaceReserved="false">
+        <org.meowcat.edxposed.manager.widget.IntegerListPreference
+            android:entries="@array/theme_texts"
+            android:title="@string/settings_theme"
+            android:key="theme"
+            android:summary="%s"
+            android:defaultValue="-1"
+            android:entryValues="@array/theme_values"
+            app:iconSpaceReserved="false" />
+        <SwitchPreference
+            android:title="@string/confirm_reboots"
+            android:key="confirm_reboots"
+            android:defaultValue="true"
+            app:iconSpaceReserved="false" />
+        <SwitchPreference
+            android:title="@string/skip_xposedminversion_check"
+            android:key="skip_xposedminversion_check"
+            android:summary="@string/skip_xposedminversion_check_summ"
+            android:defaultValue="false"
+            app:iconSpaceReserved="false" />
+        <SwitchPreference
+            android:title="@string/show_modules"
+            android:key="show_modules"
+            android:summary="@string/show_modules_summary"
+            android:defaultValue="true"
+            app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/settings_group_download"
+        android:key="group_download"
+        app:iconSpaceReserved="false">
+        <SwitchPreference
+            android:title="@string/install_with_su"
+            android:key="install_with_su"
+            android:summary="@string/install_with_su_summ"
+            android:defaultValue="false"
+            app:iconSpaceReserved="false" />
+        <SimpleMenuPreference
+            android:entries="@array/release_type_texts"
+            android:title="@string/settings_release_type"
+            android:key="release_type_global"
+            android:summary="%s"
+            android:defaultValue="stable"
+            android:entryValues="@array/release_type_values"
+            app:iconSpaceReserved="false" />
+        <SwitchPreference
+            android:title="@string/ignore_updates"
+            android:key="ignore_updates"
+            android:summary="@string/ignore_updates_summ"
+            android:defaultValue="false"
+            app:iconSpaceReserved="false" />
+        <SwitchPreference
+            android:title="@string/enable_heads_up"
+            android:key="heads_up"
+            android:summary="@string/enable_heads_up_summary"
+            android:defaultValue="true"
+            app:iconSpaceReserved="false" />
+        <SwitchPreference
+            android:title="@string/notify_module_update"
+            android:key="snack_bar"
+            android:defaultValue="true"
+            app:iconSpaceReserved="false" />
+        <SwitchPreference
+            android:title="@string/alt_download_method"
+            android:key="alt_download"
+            android:summary="@string/alt_download_method_summ"
+            android:defaultValue="false"
+            app:iconSpaceReserved="false" />
+        <SwitchPreference
+            android:title="@string/custom_list"
+            android:key="custom_list"
+            android:summary="@string/custom_list_summ"
+            android:defaultValue="false"
+            app:iconSpaceReserved="false" />
+        <SwitchPreference
+            android:title="@string/ignore_chinese"
+            android:key="ignore_chinese"
+            android:summary="@string/ignore_chinese_summary"
+            app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/settings_group_framework"
+        android:key="group_framework"
+        app:iconSpaceReserved="false">
+        <Preference
+            android:title="@string/pref_compat_mode_title"
+            android:key="compat_mode"
+            android:summary="@string/pref_compat_mode_summary"
+            app:iconSpaceReserved="false" />
+        <SwitchPreference
+            android:title="@string/pref_title_black_white_list"
+            android:key="black_white_list_switch"
+            android:summary="@string/pref_black_white_list_summary"
+            android:defaultValue="false"
+            app:iconSpaceReserved="false" />
+        <SwitchPreference
+            android:title="@string/white_list_mode_title"
+            android:key="white_list_switch"
+            android:summary="@string/white_list_mode_summary"
+            android:defaultValue="false"
+            app:iconSpaceReserved="false" />
+        <SwitchPreference
+            android:title="@string/pref_title_dynamic_modules"
+            android:key="is_dynamic_modules"
+            android:summary="@string/pref_dynamic_modules_summary"
+            android:defaultValue="false"
+            app:iconSpaceReserved="false" />
+        <SwitchPreference
+            android:title="@string/pref_title_enable_boot_image_deopt"
+            android:key="enable_boot_image_deopt"
+            android:summary="@string/pref_enable_boot_image_deopt_summary"
+            android:defaultValue="false"
+            app:iconSpaceReserved="false" />
+        <SwitchPreference
+            android:persistent="false"
+            android:title="@string/settings_disable_resources"
+            android:key="disable_resources"
+            android:summary="@string/settings_disable_resources_summary"
+            android:defaultValue="false"
+            app:iconSpaceReserved="false" />
+        <SwitchPreference
+            android:title="@string/hook_modules"
+            android:key="hook_modules"
+            android:summary="@string/hook_modules_summary"
+            android:defaultValue="true"
+            app:iconSpaceReserved="false" />
+        <SwitchPreference
+            android:title="@string/pass_safetynet"
+            android:key="pass_safetynet"
+            android:summary="@string/pass_safetynet_summary"
+            android:defaultValue="false"
+            app:iconSpaceReserved="false" />
+        <SwitchPreference
+            android:title="@string/pref_title_disable_verbose_log"
+            android:key="disable_verbose_log"
+            android:defaultValue="false"
+            app:iconSpaceReserved="false" />
+        <SwitchPreference
+            android:title="@string/pref_title_disable_modules_log"
+            android:key="disable_modules_log"
+            android:summary="@string/pref_disable_modules_log_summary"
+            android:defaultValue="false"
+            app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+</PreferenceScreen>
